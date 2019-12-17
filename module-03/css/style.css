@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.conteiner {
+    width: 903px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sait {
+    padding-top: 77px;
+    margin-bottom: 105px;
+}
+
+.sait-navigation {
+    list-style: none;
+    /*убирает точки списка*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sait-navigation li {
+    display: inline-block;
+    margin-right: 95px;
+}
+
+.sait-navigation li:last-child {
+    margin-right: 0;
+}
+
+.sait-navigation a {
+    text-transform: uppercase;
+    /*большие буквы*/
+    text-decoration: none;
+    /*убирает подчеркивание*/
+    line-height: 24px;
+    /*размер шрифта *на 1,2 если VA auto*/
+    color: rgb(98, 98, 98);
+}
+
+/*ховер меняет цвет при поппадании мышкой по меню, фокус меняет цвет при переходе табом по меню*/
+.sait-navigation a:hover,
+.sait-navigation a:focus {
+    color: rgb(3, 169, 244);
+
+}
+
+
+
+/*FEAUTERS*/
+.features {
+    margin-bottom: 52px;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    /*у строчно блочных есть перенос строки его нужно скинуть. После этого всем текстам нужно выставить размер*/
+}
+
+.features-list-item {
+    width: 420px;
+    display: inline-block;
+    margin-right: 61px;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 130px;
+}
+
+/*2n это у каждого второго*/
+.features-list-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+/*-n +2 у двух нижних*/
+.features-list-item:nth-last-child(-n +2) {
+    margin-bottom: 0;
+}
+
+.features-list-name {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    margin-bottom: 33px;
+    /*выщит. по формуле*/
+}
+
+.features-list-about {
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(98, 98, 98);
+    margin-bottom: 36px;
+    /*выщит. по формуле*/
+}
+
+.load-more {
+    padding-bottom: 70px;
+}
+
+.load-more div {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+.load {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.load a {
+    width: 164px;
+    display: block;
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+    font-size: 20px;
+    border-style: ridge;
+    padding: 20px 25px;
+    margin: 0px auto;
+    border-color: rgb(98, 98, 98);
+    border-width: 1px;
+    text-align: center;
+}
