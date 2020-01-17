@@ -1,0 +1,267 @@
+/* связано с нормалайзом */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* обязательно когда исп. float что бы не схлопнулся задний фон */
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/*!!!*/
+img {
+    display: block;
+    max-width: 100%;
+    /* чтобы не розтягивалась больше чем оригинальный розмер */
+    height: auto;
+}
+
+/*  */
+body {
+    font-family: 'Myriad Pro Regular';
+    color: rgb(85, 82, 82);
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0;
+}
+
+/* применяю и к ХЕДЕРУ и к МЕЙНУ */
+.conteiner {
+    width: 1110px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+/* НАВИНАЦИЯ ХЕДЕР*/
+
+.menu {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    text-transform: uppercase;
+    /* большой шрифт */
+}
+
+.sait-navigation {
+    list-style: none;
+    /* убирает точки со списка */
+    margin: 0;
+    padding: 0;
+    width: 388px;
+    float: right;
+}
+
+h1 {
+    float: left;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 37px;
+    line-height: 32px;
+}
+
+h1::first-letter {
+    color: rgb(26, 188, 156);
+}
+
+.sait-navigation-item {
+    margin-top: 42px;
+    float: left;
+    margin-right: 23px;
+    line-height: 11px;
+}
+
+.sait-navigation-item a {
+    display: inline-block;
+    color: rgb(15, 1, 1);
+    text-transform: uppercase;
+    /* большой шрифт */
+    text-decoration: none;
+    /* убераем подчеркивание а */
+    line-height: 11px;
+    /* в фотошопе */
+}
+
+/*6n это у каждого второго*/
+.sait-navigation-item:nth-child(6n) {
+    margin-right: 0;
+
+}
+
+/*ховер меняет цвет при поппадании мышкой по меню, фокус меняет цвет при переходе табом по меню*/
+.sait-navigation a:hover,
+.sait-navigation a:focus {
+    color: rgb(26, 188, 156);
+}
+
+
+/* КОНТЕНТ МЕЙН */
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    margin-top: 101px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+h2::after {
+    display: block;
+    content: '';
+    width: 164px;
+    height: 7px;
+    background-color: rgb(26, 188, 156);
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 92px;
+    /* станит по центру так как он блочный  */
+}
+
+.features-list {
+    list-style: none;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list-item {
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+    background-color: rgb(231, 238, 251);
+}
+
+/*4n это у каждого второго*/
+.features-list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* выберет последнии 4 и уберет нижний маржин */
+.features-list-item:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.features-list-item p {
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.features-list-item div {
+    height: auto;
+    overflow: hidden;
+}
+
+.list-name {
+    text-align: left;
+    width: 201px;
+    margin: 0 auto;
+    float: left;
+    background-color: rgb(85, 82, 82);
+}
+
+.features-list-item:hover .list-name {
+    filter: opacity(1);
+    background-color: rgb(26, 188, 156);
+}
+
+.list-many {
+    text-align: center;
+    width: 54px;
+    margin: 0 auto;
+    float: left;
+    background-color: rgb(140, 140, 140);
+}
+
+.features-list-item:hover .list-many {
+    filter: opacity(1);
+    background-color: rgb(127, 217, 199);
+}
+
+.list-many::before {
+    content: "\0024";
+}
+
+/* друга частина МЕЙНА */
+.team {
+    margin-bottom: 81px;
+}
+
+.team-list {
+    list-style: none;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.team-list-item {
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+}
+
+/*4n это у каждого второго*/
+.team-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.team-list-name {
+    text-align: left;
+    margin: 0em;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 14px;
+}
+
+.team-list-name::after {
+    display: block;
+    content: '';
+    width: 136px;
+    height: 3px;
+    background-color: rgb(78, 198, 171);
+    margin-top: 14px;
+    margin-bottom: 38px;
+    /* станит по центру так как он блочный  */
+}
+
+.team-list-about {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.button {
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+}
+
+.read {
+    background: rgb(78, 198, 171);
+    border-radius: 2px;
+    border-width: 0px;
+    /* border-color: #626262; */
+    /* border-style: solid; */
+    padding: 1rem 2rem;
+    /*     width: 162px;
+    height: 58px; */
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    /* line-height: 1.2; */
+    float: left;
+    text-transform: capitalize;
+}
