@@ -1,0 +1,436 @@
+/* связано с нормалайзом */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* обязательно когда исп. float что бы не схлопнулся задний фон */
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/*!!!*/
+img {
+    display: block;
+    max-width: 100%;
+    /* чтобы не розтягивалась больше чем оригинальный розмер */
+    height: auto;
+}
+
+/* прячем h1 */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    opacity: 0;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  }
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(85, 82, 82);
+    margin: 0;
+}
+
+/* применяю и к ХЕДЕРУ и к МЕЙНУ */
+.conteiner {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* НАВИНАЦИЯ ХЕДЕР*/
+
+.menu {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 32px;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 11px;
+    /**/
+}
+
+.item {
+    display: inline-block;
+    margin-top: 37px;
+    float: left;
+}
+
+.logo {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+.sait-navigation {
+    list-style: none;
+    /* убирает точки со списка */
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding-top: 42px;
+}
+
+.sait-navigation-item {
+    float: left;
+    margin-right: 23px;
+    line-height: 11px;
+}
+
+.sait-menu {
+    display: inline-block;
+    color: rgb(15, 1, 1);
+    text-transform: uppercase;
+    /* большой шрифт */
+    text-decoration: none;
+    /* убераем подчеркивание а */
+    line-height: 11px;
+    /* в фотошопе */
+}
+
+/*6n это у каждого второго*/
+.sait-navigation-item:nth-child(6n) {
+    margin-right: 0;
+}
+
+/*ховер меняет цвет при поппадании мышкой по меню, фокус меняет цвет при переходе табом по меню*/
+.sait-menu:hover,
+.sait-menu:focus {
+    color: rgb(26, 188, 156);
+}
+
+
+/* КОНТЕНТ МЕЙН */
+
+
+.slider {
+    min-height: 600px;
+    background-image: linear-gradient( to right, rgba(0,0,0, 0.52), rgba(0,0,0, 0.52)), url(../img/slider/slider.png);
+    background-repeat: no-repeat;
+    /* заливает */
+    background-size: cover;
+    margin-bottom: 101px;
+}
+.slider-content{
+    position: relative;
+}
+
+.slider-ctrl {
+    border: none;
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    background-color: rgb(26, 188, 156);
+    position: absolute;
+    /* позиционируем относительно слайда slider и задаем ему position:relative */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-ctrl img{
+    margin: 0 auto;
+}
+
+.slider-ctrl-prev {
+    left: 0;
+}
+
+.slider-ctrl-next {
+    right: 0;
+}
+
+.slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+
+.slides-item {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+}
+
+.slides-descr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.paris-tours {
+    font-size: 60px;
+    font-family: 'Roboto-Blak' sans-serif;
+    margin: 0;
+}
+
+.offers-tours {
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Roboto-Light' sans-serif;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto-Blak' sans-serif;
+}
+
+h3::after {
+    display: block;
+    content: '';
+    width: 164px;
+    height: 7px;
+    background-color: rgb(26, 188, 156);
+    margin: 0 auto;
+    margin-top: 23px;
+    margin-bottom: 80px;
+    /* станит по центру так как он блочный  */
+}
+
+.features-list {
+    list-style: none;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 98px;
+}
+
+.features-list-item {
+    width: 255px;
+    margin-right: 30px;
+    float: left;
+    /* line-height: 40px; */
+    position: relative;
+}
+
+/*4n это у каждого второго*/
+.features-list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.features-list-item p {
+    font-size: 18px;
+    font-family: 'Roboto-Blak' sans-serif;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.features-list-item:hover .list-name {
+    filter: opacity(1);
+    background-color: rgb(26, 188, 156);
+}
+.features-list-item:hover .list-many {
+    filter: opacity(1);
+    background-color: rgb(127, 217, 199);
+}
+
+.list-item {
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.list-name {
+    text-align: left;
+    width: 201px;
+    margin: 0 auto;
+    float: left;
+    background-color: rgb(50, 50, 50);
+    padding-left: 14px;
+}
+
+.list-many {
+    text-align: center;
+    width: 54px;
+    margin: 0 auto;
+    float: left;
+    background-color: rgb(140, 140, 140);
+}
+
+.list-many::before {
+    content: "\0024";
+}
+
+.overlay-icon {
+    display: inline-block;
+    width: 100%;
+    height: 282px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    top: 0;
+    left: 0;
+}
+
+.features-list-item:hover .overlay-icon {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.features-list-item:hover .social-icons {
+    opacity: 1;
+}
+
+.icons {
+    font-family: 'Roboto-Light' sans-serif;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.social-icons {
+    float: left;
+    margin-right: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: slategrey;
+    opacity: 0;
+}
+
+/*3n это у каждого третего*/
+.social-icons:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*4n это у каждого четвертого*/
+.social-icons:nth-child(4n) {
+    margin-right: 0;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+    background-color: rgb(26, 188, 156);
+}
+
+.link {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+.icons-social {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.link-social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* SOCIAL ICONS */
+.icons-add {
+    width: 166px;
+    position: relative;
+    overflow: hidden;
+}
+
+.trolley {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.trolley div {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-trolley {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add {
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding-left: 50px;
+}
+
+/* FOOTER */
+.podval {
+    font-size: 16px;
+    font-family: 'Roboto-Light' sans-serif;
+    background: rgb(50, 50, 50);
+    color: rgb(254, 254, 254);
+}
+
+.footer-item {
+    width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 88px;
+}
+.footer-info{
+    display: inline-block;
+    margin: 0;
+}
+.dokan::before {
+    content: '\00A9';
+}
+.dokan::after {
+    content: '\2223';
+}
+.graph::first-line{
+    color: rgb(70, 191, 169);
+}
