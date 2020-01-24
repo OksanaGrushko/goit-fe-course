@@ -61,6 +61,9 @@ body {
     width: 1110px;
     margin: 0 auto;
 }
+.wrapper{
+    margin-bottom: 32px;
+}
 
 /* НАВИНАЦИЯ ХЕДЕР*/
 
@@ -69,16 +72,14 @@ body {
     margin: 0;
     height: auto;
     overflow: hidden;
-    padding-bottom: 32px;
     font-family: "OpenSans-Bold", sans-serif;
     font-size: 14px;
     line-height: 11px;
-    /**/
+    margin-top: 39px;
 }
 
 .item {
     display: inline-block;
-    margin-top: 37px;
     float: left;
 }
 
@@ -94,7 +95,6 @@ body {
     margin: 0;
     padding: 0;
     float: right;
-    padding-top: 42px;
 }
 
 .sait-navigation-item {
@@ -114,8 +114,8 @@ body {
     /* в фотошопе */
 }
 
-/*6n это у каждого второго*/
-.sait-navigation-item:nth-child(6n) {
+/*у последнего*/
+.sait-navigation-item:last-child {
     margin-right: 0;
 }
 
@@ -127,7 +127,9 @@ body {
 
 
 /* КОНТЕНТ МЕЙН */
-
+.wrapper-slider{
+    margin-bottom: 101px;
+}
 
 .slider {
     min-height: 600px;
@@ -135,7 +137,7 @@ body {
     background-repeat: no-repeat;
     /* заливает */
     background-size: cover;
-    margin-bottom: 101px;
+    
 }
 .slider-content{
     position: relative;
@@ -151,6 +153,12 @@ body {
     /* позиционируем относительно слайда slider и задаем ему position:relative */
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.slider-ctrl:hover {
+    opacity: 1;
 }
 
 .slider-ctrl img{
@@ -168,11 +176,7 @@ body {
 .slides {
     margin: 0;
     padding: 0;
-    list-style: none;
     color: rgb(255, 255, 255);
-}
-
-.slides-item {
     width: 100%;
     height: 600px;
     object-fit: cover;
@@ -240,8 +244,8 @@ h3::after {
     position: relative;
 }
 
-/*4n это у каждого второго*/
-.features-list-item:nth-child(4n) {
+/*у каждого второго*/
+.features-list-item:last-child {
     margin-right: 0;
 }
 
@@ -339,8 +343,8 @@ h3::after {
     margin-right: 0;
 }
 
-/*4n это у каждого четвертого*/
-.social-icons:nth-child(4n) {
+/*у последнего*/
+.social-icons:last-child {
     margin-right: 0;
 }
 
@@ -415,8 +419,6 @@ h3::after {
 }
 
 .footer-item {
-    width: 1110px;
-    margin: 0 auto;
     text-align: center;
     vertical-align: middle;
     line-height: 88px;
