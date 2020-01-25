@@ -24,13 +24,6 @@ img {
     height: auto;
 }
 
-/* прячем h1 */
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-    position: absolute;
-    opacity: 0;
-}
 
 @font-face {
     font-family: "Roboto-Regular";
@@ -127,17 +120,12 @@ body {
 
 
 /* КОНТЕНТ МЕЙН */
-.wrapper-slider{
-    margin-bottom: 101px;
-}
-
 .slider {
     min-height: 600px;
     background-image: linear-gradient( to right, rgba(0,0,0, 0.52), rgba(0,0,0, 0.52)), url(../img/slider/slider.png);
     background-repeat: no-repeat;
     /* заливает */
     background-size: cover;
-    
 }
 .slider-content{
     position: relative;
@@ -206,8 +194,11 @@ body {
     font-family: 'Roboto-Light' sans-serif;
     margin: 0;
 }
-
+.main-collection{
+    background-color: rgb(233, 240, 253);
+}
 h3 {
+    padding-top: 95px;
     text-align: center;
     font-size: 48px;
     margin: 0;
