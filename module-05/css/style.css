@@ -53,13 +53,10 @@ body {
 }
 
 /* применяю и к ХЕДЕРУ и к МЕЙНУ */
-.conteiner {
+.wrapper {
     width: 1110px;
     margin: 0 auto;
-}
-
-.wrapper {
-    margin-bottom: 32px;
+    line-height: 1.5;
 }
 
 /* НАВИНАЦИЯ ХЕДЕР*/
@@ -69,10 +66,8 @@ body {
     margin: 0;
     height: auto;
     overflow: hidden;
-    font-family: "OpenSans-Bold", sans-serif;
-    font-size: 14px;
-    line-height: 11px;
     margin-top: 39px;
+    margin-bottom: 32px;
 }
 
 .item {
@@ -97,7 +92,8 @@ body {
 .sait-navigation-item {
     float: left;
     margin-right: 23px;
-    line-height: 11px;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14px;
 }
 
 .sait-menu {
@@ -107,8 +103,6 @@ body {
     /* большой шрифт */
     text-decoration: none;
     /* убераем подчеркивание а */
-    line-height: 11px;
-    /* в фотошопе */
 }
 
 /*у последнего*/
@@ -130,10 +124,14 @@ body {
     background-repeat: no-repeat;
     /* заливает */
     background-size: cover;
+    position: relative;
 }
 
 .slider-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slider-ctrl {
@@ -166,16 +164,6 @@ body {
     right: 0;
 }
 
-.slides {
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    position: relative;
-}
-
 .slides-descr {
     width: 760px;
     position: absolute;
@@ -184,6 +172,7 @@ body {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     margin: 0 auto;
+    color: rgb(255, 255, 255);
 }
 
 .paris-tours {
@@ -204,7 +193,7 @@ body {
 }
 
 h3 {
-    padding-top: 95px;
+    padding-top: 92px;
     text-align: center;
     font-size: 48px;
     margin: 0;
@@ -212,6 +201,7 @@ h3 {
     font-family: 'Roboto-Blak'sans-serif;
     padding-bottom: 110px;
     position: relative;
+    line-height: 1.1;
 }
 
 h3::after {
@@ -232,28 +222,19 @@ h3::after {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    padding-bottom: 98px;
+    padding-bottom: 100px;
 }
 
 .features-list-item {
     width: 255px;
     margin-right: 30px;
     float: left;
-    /* line-height: 40px; */
     position: relative;
 }
 
 /*у каждого второго*/
 .features-list-item:last-child {
     margin-right: 0;
-}
-
-.features-list-item p {
-    font-size: 18px;
-    font-family: 'Roboto-Blak'sans-serif;
-    line-height: 40px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
 }
 
 .features-list-item:hover .list-name {
@@ -273,6 +254,14 @@ h3::after {
     bottom: 0;
 }
 
+.text-item{
+    font-size: 18px;
+    font-family: 'Roboto-Blak'sans-serif;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
 .list-name {
     text-align: left;
     width: 201px;
@@ -280,6 +269,8 @@ h3::after {
     float: left;
     background-color: rgb(50, 50, 50);
     padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 6px;
 }
 
 .list-many {
@@ -288,6 +279,8 @@ h3::after {
     margin: 0 auto;
     float: left;
     background-color: rgb(140, 140, 140);
+    padding-top: 7px;
+    padding-bottom: 6px;
 }
 
 .list-many::before {
@@ -317,8 +310,6 @@ h3::after {
 }
 
 .icons {
-    font-family: 'Roboto-Light'sans-serif;
-    font-size: 14px;
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -404,36 +395,35 @@ h3::after {
 }
 
 .add {
+    font-family: 'Roboto-Light'sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
     vertical-align: middle;
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 0;
-    padding-left: 50px;
+    line-height: 2.1;
+    padding: 10px 6px 10px 50px;
 }
 
 /* FOOTER */
 .podval {
-    font-size: 16px;
-    font-family: 'Roboto-Light'sans-serif;
     background: rgb(50, 50, 50);
-    color: rgb(254, 254, 254);
 }
 
 .footer-item {
     text-align: center;
     vertical-align: middle;
-    line-height: 28px;
-
-}
-
-.info {
-    padding-top: 32px;
-    padding-bottom: 30px;
+    padding-top: 33px;
+    padding-bottom: 31px;
 }
 
 .footer-info {
     display: inline-block;
     margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto-Light'sans-serif;
+    color: rgb(254, 254, 254);
 }
 
 .dokan::before {
