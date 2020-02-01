@@ -190,13 +190,15 @@ body {
 .position-item {
     text-align: center;
     padding-top: 110px;
-    padding-bottom: 64px;
+    padding-bottom: 107px;
+    position: relative;
 }
 
 .position-item-too {
     text-align: center;
     padding-top: 85px;
-    padding-bottom: 41px;
+    padding-bottom: 84px;
+    position: relative;
 }
 
 h2 {
@@ -221,8 +223,12 @@ h3::after {
     width: 60px;
     height: 3px;
     background-color: rgb(243, 129, 129);
-    margin: 0 auto;
-    margin-top: 40px;
+    /* margin: 0 auto;
+    margin-top: 40px; */
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
