@@ -54,13 +54,13 @@ img {
 
 body {
     margin: 0;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
     color: rgb(153, 153, 153);
     font-size: 15px;
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif;
     width: 1201px;
     margin: 0 auto;
 }
@@ -128,7 +128,6 @@ body {
 .amazing-content {
     width: 380px;
     padding-left: 82px;
-    padding-right: 10px;
     margin-bottom: 90px;
 }
 
