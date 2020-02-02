@@ -150,11 +150,11 @@ body {
 }
 
 .slider-ctrl-prev {
-    left: -23%;
+    left: 0%;
 }
 
 .slider-ctrl-next {
-    right: -23%;
+    right: 0%;
 }
 
 .slides-descr {
