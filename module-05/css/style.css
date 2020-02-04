@@ -150,11 +150,11 @@ body {
 }
 
 .slider-ctrl-prev {
-    left: 0%;
+    left: 244px;
 }
 
 .slider-ctrl-next {
-    right: 0%;
+    right: 244px;
 }
 
 .slides-descr {
@@ -184,20 +184,21 @@ body {
 .main-collection {
     background-color: rgb(233, 240, 253);
 }
-
-h3 {
-    padding-top: 92px;
+.new-c {
     text-align: center;
+}
+.collection {
+    display: inline-block;
+    margin-top: 92px;
+    margin-bottom: 110px;
     font-size: 48px;
-    margin: 0;
     text-transform: uppercase;
     font-family: 'Roboto-Blak'sans-serif;
-    padding-bottom: 110px;
     position: relative;
     line-height: 1.1;
 }
 
-h3::after {
+.collection::after {
     display: block;
     content: '';
     width: 164px;
@@ -206,7 +207,7 @@ h3::after {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 80px;
+    bottom: -27px;
 }
 
 .features-list {
@@ -215,7 +216,7 @@ h3::after {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .features-list-item {
@@ -248,11 +249,14 @@ h3::after {
 }
 
 .text-item{
+    margin: 0;
     font-size: 18px;
     font-family: 'Roboto-Blak'sans-serif;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    margin-top: 7px;
+    margin-bottom: 6px;
 }
 
 .list-name {
@@ -262,8 +266,6 @@ h3::after {
     float: left;
     background-color: rgb(50, 50, 50);
     padding-left: 14px;
-    padding-top: 7px;
-    padding-bottom: 6px;
 }
 
 .list-many {
@@ -272,11 +274,9 @@ h3::after {
     margin: 0 auto;
     float: left;
     background-color: rgb(140, 140, 140);
-    padding-top: 7px;
-    padding-bottom: 6px;
 }
 
-.list-many::before {
+.list-many-item::before {
     content: "\0024";
 }
 
@@ -406,8 +406,6 @@ h3::after {
 .footer-item {
     text-align: center;
     vertical-align: middle;
-    padding-top: 33px;
-    padding-bottom: 31px;
 }
 
 .footer-info {
@@ -416,6 +414,8 @@ h3::after {
     font-size: 16px;
     font-family: 'Roboto-Light'sans-serif;
     color: rgb(254, 254, 254);
+    margin-top: 33px;
+    margin-bottom: 31px;
 }
 
 .dokan::before {
