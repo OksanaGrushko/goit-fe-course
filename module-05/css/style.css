@@ -184,9 +184,11 @@ body {
 .main-collection {
     background-color: rgb(233, 240, 253);
 }
+
 .new-c {
     text-align: center;
 }
+
 .collection {
     display: inline-block;
     margin-top: 92px;
@@ -248,7 +250,7 @@ body {
     bottom: 0;
 }
 
-.text-item{
+.text-item {
     margin: 0;
     font-size: 18px;
     font-family: 'Roboto-Blak'sans-serif;

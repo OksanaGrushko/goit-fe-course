@@ -112,14 +112,12 @@ body {
 
 
 /* MAIN */
-.amazing {
-    padding: 0 10px;
-}
+
 
 .amazing-menu {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -188,15 +186,15 @@ body {
 /*  */
 .position-item {
     text-align: center;
-    padding-top: 110px;
-    padding-bottom: 107px;
+    margin-top: 124px;
+    margin-bottom: 107px;
     position: relative;
 }
 
 .position-item-too {
     text-align: center;
-    padding-top: 85px;
-    padding-bottom: 84px;
+    margin-top: 85px;
+    margin-bottom: 84px;
     position: relative;
 }
 
@@ -223,7 +221,7 @@ h3::after {
     height: 3px;
     background-color: rgb(243, 129, 129);
     position: absolute;
-    bottom: 22%;
+    top: 112px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -232,10 +230,10 @@ h3::after {
 /* text */
 
 .item-text {
-    margin: 0;
+    
     text-align: center;
-    padding: 0 112px;
-    padding-bottom: 82px;
+    margin: 0 112px;
+    margin-bottom: 82px;
 }
 
 .photo-galery {
