@@ -15,23 +15,33 @@ img {
     /* чтобы не розтягивалась больше чем оригинальный розмер */
     height: auto;
 }
-
-@font-face{
-    font-family: "MontserratRegular";
-    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-    /* src: url('../fonts/montserrat-v14-latin-regular.woff'),format('woff'),
-    url('../fonts/montserrat-v14-latin-regular.woff2'),format('woff2'); */
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-@font-face{
-    font-family: "MontserratBold";
-    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-    /* src: url('../fonts/montserrat-v14-latin-800.woff'),format('woff'),
-    url('../fonts/montserrat-v14-latin-800.woff2'),format('woff2'); */
+/* montserrat-800 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+       url('../fonts/montserrat-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-@font-face{
-    font-family: "RobotoSlabRegular";
-    src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
-}
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 body{
     font-size: 14px;
@@ -71,8 +81,8 @@ body{
     color: rgb(50, 50, 50);
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "MontserratRegular", sans-serif ;
-    font-weight: normal;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 400;
 }
 .navigation-item-sait:hover{
     color: rgb(254, 209, 54);
@@ -91,7 +101,8 @@ h2{
     color: rgb(34, 34, 34);
     text-transform: uppercase;
     font-size: 40px;
-    font-family: "MontserratBold", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .text-additional{
     margin: 0;
@@ -137,13 +148,15 @@ h2{
     margin-top: 23px;
     color: rgb(34, 34, 34);
     font-size: 18px;
-    font-family: "MontserratBold", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .services-name-description{
     margin: 0;
     margin-top: 16px;
     color: rgb(119, 119, 119);
-    font-family: "RobotoSlabRegular", serif;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
 }
 /* CONTACT */
 .contact{
@@ -167,7 +180,8 @@ h3{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 40px;
-    font-family: "MontserratBold", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .form-contact{
     position: relative;
@@ -185,7 +199,8 @@ h3{
 .form-item input[type="text"], input[type="email"]{
     padding-left: 20px;
     font-size: 14px;
-    font-family: "MontserratBold", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .form-item input[type="text"]:valid {
     outline-color: rgb(32, 193, 74);
@@ -203,7 +218,8 @@ textarea[name="message"]{
     padding-left: 20px;
     padding-top: 18px;
     font-size: 14px;
-    font-family: "MontserratBold", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .input-item{
     width: 455px;
@@ -235,7 +251,8 @@ textarea[name="message"]{
 .button{
     color: rgb(255, 255, 255);
     font-size: 18px;
-    font-family: "MontserratBold", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
     background-color: rgb(254, 209, 54);
     border: none;
