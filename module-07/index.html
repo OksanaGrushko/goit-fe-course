@@ -1,14 +1,80 @@
  <!DOCTYPE html>
  <html lang="en">
+
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Document</title>
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- стили  -->
+     <link rel="stylesheet" href="css/style.css">
  </head>
- <body>
-     
 
-    
+ <body>
+     <header>
+         <div class="wrapper">
+             <div class="navigation-sait">
+                 <a class="navigation-sait-item"><img src="img/logo/Logo-Treehouse.png"></a>
+                 <ul class="navigation">
+                     <li class="navigation-item"><a href="#" class="navigation-item-sait">Home</a></li>
+                     <li class="navigation-item"><a href="#" class="navigation-item-sait">Services</a></li>
+                     <li class="navigation-item"><a href="#" class="navigation-item-sait">Portfolio</a></li>
+                     <li class="navigation-item"><a href="#" class="navigation-item-sait">About</a></li>
+                     <li class="navigation-item"><a href="#" class="navigation-item-sait">Contact</a></li>
+                 </ul>
+             </div>
+         </div>
+     </header>
+
+     <section class="services">
+         <div class="wrapper">
+             <div class="services-item">
+                 <h2>Services</h2>
+                 <p class="text-additional">Proin iaculis purus consequat sem cure.</p>
+             </div>
+             <ul class="services-menu">
+                 <li class="services-menu-item basket">
+                     <p class="services-name ">E-Commerce</p>
+                     <p class="services-name-description">Proin iaculis purus consequat sem cure
+                         digni ssim. Donec porttitora entum suscipit
+                         aenean rhoncus posuere odio in tincidunt.</p>
+                 </li>
+                 <li class="services-menu-item laptop">
+                     <p class="services-name">Responsive Web</p>
+                     <p class="services-name-description">Proin iaculis purus consequat sem cure
+                         digni ssim. Donec porttitora entum suscipit
+                         aenean rhoncus posuere odio in tincidunt.</p>
+                 </li>
+                 <li class="services-menu-item locked">
+                     <p class="services-name">Web Security</p>
+                     <p class="services-name-description">Proin iaculis purus consequat sem cure
+                         digni ssim. Donec porttitora entum suscipit
+                         aenean rhoncus posuere odio in tincidunt.</p>
+                 </li>
+             </ul>
+         </div>
+     </section>
+
+     <section class="contact">
+         <div class="wrapper">
+             <div class="contact-text">
+                 <h3>Contact us</h3>
+                 <p class="text-additional">Proin iaculis purus consequat sem cure.</p>
+             </div>
+             <form class="form-contact" action="#" method="GET">
+                <div class="form">
+                <div class="form-item">
+                <input class="input-item input-other" type="text" placeholder="your Name*" name="user-name" autofocus required>
+                <input class="input-item input-other" type="email" placeholder="your e-mail*" name="user-email" required>
+                <input class="input-item input-other" type="text" placeholder="subject" name="subject">
+                </div>
+                    <textarea class="input-item input-message" name="message" placeholder="Your message*" required></textarea>
+                </div>
+                <button class="button" type="submit">Send Message</button>
+            </form>
+         </div>
+     </section>
  </body>
+
  </html>
