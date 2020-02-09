@@ -18,15 +18,19 @@ img {
 
 @font-face{
     font-family: "MontserratRegular";
-    src: url(../fonts/Montserrat-Regular.ttf) format(truetype);
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    /* src: url('../fonts/montserrat-v14-latin-regular.woff'),format('woff'),
+    url('../fonts/montserrat-v14-latin-regular.woff2'),format('woff2'); */
 }
 @font-face{
     font-family: "MontserratBold";
-    src: url(../fonts/Montserrat-Bold.ttf);
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    /* src: url('../fonts/montserrat-v14-latin-800.woff'),format('woff'),
+    url('../fonts/montserrat-v14-latin-800.woff2'),format('woff2'); */
 }
 @font-face{
     font-family: "RobotoSlabRegular";
-    src: url(../fonts/RobotoSlab-Regular.ttf);
+    src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
 }
 
 body{
@@ -183,6 +187,18 @@ h3{
     font-size: 14px;
     font-family: "MontserratBold", sans-serif;
 }
+.form-item input[type="text"]:valid {
+    outline-color: rgb(32, 193, 74);
+}
+.form-item input[type="text"]:invalid {
+    outline-color: rgb(222,47,47);
+}
+.form-item input[type="email"]:valid{
+    outline-color: rgb(32, 193, 74);
+}
+.form-item input[type="email"]:invalid {
+    outline-color:rgb(222,47,47);
+}
 textarea[name="message"]{
     padding-left: 20px;
     padding-top: 18px;
@@ -191,7 +207,6 @@ textarea[name="message"]{
 }
 .input-item{
     width: 455px;
-    border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
     border-radius: 2px;
@@ -210,6 +225,12 @@ textarea[name="message"]{
 .input-message{
     height: 208px;
     resize: none;
+}
+.input-message[name="message"]:valid{
+    outline-color: rgb(32, 193, 74);
+}
+.input-message[name="message"]:invalid{
+    outline-color:rgb(222,47,47);
 }
 .button{
     color: rgb(255, 255, 255);
