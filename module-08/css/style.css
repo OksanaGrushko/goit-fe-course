@@ -334,7 +334,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:1439px) {
+@media screen and (min-width: 768px) and (max-width:959px) {
     .partner-item:not(:nth-child(2n)) {
         margin-right: 20px;
     }
@@ -344,7 +344,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 960px) {
     .wrapper {
         max-width: 940px;
         padding: 0;
