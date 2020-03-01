@@ -4,36 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap-4 -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- стили  -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <header class="sait ">
-        <div class="wrapper ">
-            <div class="coneiner">
-                <div class="row naw">
-                    <div class="col-12 col-md-5 button">
-                        <button type="button" class="log-in"><a class="tack" href="#">Log in</a></button>
-                        <button type="button" class="sign-in"><a class="tack" href="#">Sign up</a></button>
-                    </div>
-                    <div class="col-12 col-md-5 logotype"><a href="#" class="logo"><img src="img/logo/URLAUBSGLÜCK.png" alt="URLAUBSGLÜCK logo"></a></div>
+    <div class="container-fluid sait mb-5">
+        <div class="container pt-4 pt-md-5">
+            <div class="row mb-5 justify-content-between align-items-center">
+                <div class="col-12 col-md-4 order-md-2 pb-5 pb-md-0">
+                    <button type="button" class="log-in"><a class="tack" href="#">Log in</a></button>
+                    <button type="button" class="sign-in"><a class="tack" href="#">Sign up</a></button>
                 </div>
-                <h1 class="row">Share your holiday dreams</h1>
-                <p class="row text-item">And find the perfect partner to fullfill it</p>
-                <button type="button" class="row button-partner">Find your holiday partner</button>
+                <div class="col-12 col-md-4 order-md-1 pt-5 pt-md-0"><a href="#" class="logo"><img
+                            src="img/logo/URLAUBSGLÜCK.png" alt="URLAUBSGLÜCK logo"></a></div>
+            </div>
+            <div class="row mb-2 mb-lg-4 pt-md-5 px-md-5 justify-content-center">
+                <h1 class="col-12 col-lg-7">Share your holiday dreams</h1>
+            </div>
+            <div class="row mb-2 mb-md-4  justify-content-center">
+                <p class="col-10 text-item ">And find the perfect partner to fullfill it</p>
+            </div>
+            <div class="row "><button class="col-10 col-md-4 col-lg-3 button-partner" type="button">Find your holiday
+                    partner</button>
             </div>
         </div>
-    </header>
+    </div>
 
     <section>
-        <div class="wrapper">
-            <div class="partner-infirmation">
-                <h2>Meet a partner for your best holiday</h2>
-                <ul class="partner ">
-                    <li class="partner-item">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mb-5 partner-infirmation justify-content-center">
+                    <h2 class="col-10">Meet a partner for your best holiday</h2>
+                </div>
+                <div class="row justify-content-center mb-4 ">
+                    <div class="col-7 col-md-4 col-lg-3 mb-4 mb-lg-0 mr-md-1 mr-lg-0">
                         <div class="partner-item_icons"><img class="partner-item_foto" src="img/pictures/Layer 6.png"
                                 alt="man">
                             <div class="icons-item red"><img class="icons-item_shape" src="img/icons/Shape 128.png">
@@ -41,8 +50,8 @@
                         </div>
                         <p class="partner-first_and_last_name">Bradley Hunter</p>
                         <p class="partner-about_me">Based in Chicago. I love playing tennis and loud music.</p>
-                    </li>
-                    <li class="partner-item">
+                    </div>
+                    <div class="col-7 col-md-4 col-lg-3 mb-4 mb-lg-0">
                         <div class="partner-item_icons"><img class="partner-item_foto" src="img/pictures/Layer 7.png"
                                 alt="woman">
                             <div class="icons-item blue"><img class="icons-item_shape" src="img/icons/Shape 155.png">
@@ -50,8 +59,8 @@
                         </div>
                         <p class="partner-first_and_last_name">Heather Walker</p>
                         <p class="partner-about_me">I'm a happy person that loves cats and climbing on mountains.</p>
-                    </li>
-                    <li class="partner-item">
+                    </div>
+                    <div class="col-7 col-md-4 col-lg-3 mb-4 mb-lg-0 mr-md-1 mr-lg-0">
                         <div class="partner-item_icons"><img class="partner-item_foto" src="img/pictures/Layer 8.png"
                                 alt="man">
                             <div class="icons-item yellow"><img class="icons-item_shape" src="img/icons/Shape 153.png">
@@ -62,8 +71,8 @@
                             passion
                             to colours, typography
                             and skateboards.</p>
-                    </li>
-                    <li class="partner-item">
+                    </div>
+                    <div class="col-7 col-md-4 col-lg-3 ">
                         <div class="partner-item_icons"><img class="partner-item_foto" src="img/pictures/Layer 10.png"
                                 alt="woman">
                             <div class="icons-item dark_blue"><img class="icons-item_shape"
@@ -72,9 +81,11 @@
                         </div>
                         <p class="partner-first_and_last_name">Bradley Hunter</p>
                         <p class="partner-about_me">Based in Chicago. I love playing tennis and loud music.</p>
-                    </li>
-                </ul>
-                <button class="see" type="button">See other partners</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="see col-10 col-md-4 col-lg-3" type="button">See other partners</button>
+                </div>
             </div>
         </div>
     </section>
