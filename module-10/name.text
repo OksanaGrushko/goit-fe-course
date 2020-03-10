@@ -1,0 +1,32 @@
+blok__element--modificator
+blok--modificator
+
+
+
+
+link
+
+
+
+page-header
+
+wrapper
+
+page-navigation
+
+21 a    site-logo
+22 img     site-logo__img
+
+
+ul
+site-navigation
+    site-navigation__item
+    site-navigation__link       a
+
+
+
+amazing
+
+wrapper
+
+amazing__item
