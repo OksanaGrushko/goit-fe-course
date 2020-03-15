@@ -1,0 +1,11 @@
+.link-top{
+    position: relative;
+    vertical-align: middle;
+    fill: $color-main;
+    border-bottom: none;
+    width: 18px;
+    height: 14px;
+    &:hover, &:focus{
+        fill: $color-accent;
+    }
+}

@@ -1,0 +1,40 @@
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-navigation__item {
+  font-size: 14px;
+  font-family: $main-font-mons;
+  margin-right: 58px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.site-navigation__link {
+  text-transform: uppercase;
+  color: $color-main;
+  padding-bottom: 12px;
+  border-bottom: 3px solid $color-main;
+  transition: color, border 0.2s linear;
+
+  &:hover {
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+}
+
+.site-navigation__svg {
+  width: 18px;
+}
+
+.site-navigation__svg--shopping-cart {
+  height: 14px;
+}
+
+.site-navigation__svg--magnifying-glass {
+  height: 18px;
+}
