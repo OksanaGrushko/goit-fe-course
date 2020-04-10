@@ -1,0 +1,24 @@
+.course-list {
+  margin-left: 49px;
+  margin-bottom: 50px;
+}
+
+.course-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.course-list__item::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 36px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  z-index: 1;
+}

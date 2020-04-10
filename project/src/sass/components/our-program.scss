@@ -1,0 +1,30 @@
+.our-program {
+  background-image: url(../images/fon/black-fon2.png);
+  background-repeat: repeat-x;
+  background-position: top;
+  text-align: center;
+}
+
+.our-program__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 52px;
+  margin-bottom: 36px;
+}
+
+.our-program__list {
+  text-align: left;
+  margin-left: 62px;
+  margin-bottom: 47px;
+}
+
+.our-program__item {
+  padding-left: 30px;
+}
+
+.our-program__item:not(:last-child) {
+  border-left: solid 2px rgb(84, 98, 100);
+  padding-bottom: 32px;
+}

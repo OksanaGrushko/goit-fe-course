@@ -1,0 +1,19 @@
+.list-svg {
+  display: inline-block;
+  border: solid 2px rgb(255, 107, 8);
+  width: 58px;
+  height: 58px;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.list-svg__svg {
+  height: 36px;
+  width: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: rgb(255, 107, 8);
+}

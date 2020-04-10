@@ -1,0 +1,28 @@
+.problems {
+  background-color: rgb(255, 255, 255);
+  counter-reset: section;
+  padding: 22px 28px;
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+}
+
+.problems__title {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 52px;
+}
+
+.problems__title--accent {
+  color: rgb(255, 107, 8);
+}
+
+.problems__item {
+  font-size: 13px;
+}
+
+.problems__text {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}

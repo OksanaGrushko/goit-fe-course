@@ -1,22 +1,47 @@
-/*
- * Все паршалы импортировать в этот файл
- */
-
-@import 'normalize.scss';
-@import 'base.scss';
+@import 'normalize';
+@import 'fonts';
+@import 'base';
 
 
 @import 'helpers/variables';
-@import 'helpers/mixins.scss';
+@import 'helpers/mixins';
 
 
 @import 'components/link';
 @import 'components/list';
 @import 'components/wrapper';
 @import 'components/logotype';
-@import 'components/logo-name.scss';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
-// @import 'components/';
+@import 'components/logo-name';
+@import 'components/navigation';
+@import 'components/sandwich-click';
+@import 'components/sandwich';
+@import 'components/menu';
+@import 'components/menu-logotype';
+@import 'components/menu-button';
+@import 'components/course-offer';
+@import 'components/course-button';
+@import 'components/course-list';
+@import 'components/list-svg';
+@import 'components/list-text';
+// section 2
+@import 'components/decisions';
+@import 'components/problems';
+@import 'components/numerator';
+@import 'components/whereby';
+@import 'components/whereby-list';
+// section3
+@import 'components/our-program';
+@import 'components/our-semester';
+@import 'components/why-us';
+@import 'components/teacher';
+@import 'components/description';
+@import 'components/guarantees';
+@import 'components/respond';
+@import 'components/alumni-reviews';
+@import 'components/respond-photo';
+@import 'components/list-reviews';
+@import 'components/registration';
+@import 'components/form-register';
+@import 'components/form-input';
+@import 'components/networks';
+@import 'components/rights-reserved';

@@ -1,0 +1,53 @@
+.teacher {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(17, 21, 23);
+  margin-bottom: 22px;
+}
+
+.teacher__photo {
+  display: block;
+}
+
+.teacher__img {}
+
+.teacher__name {
+  font-size: 16px;
+  font-weight: 800;
+  color: rgb(17, 21, 23);
+  margin: 0;
+
+  margin-top: 18px;
+}
+
+.teacher__list {
+  border-top: solid 1px rgb(209, 209, 209);
+  padding-top: 25px;
+  margin-bottom: 16px;
+}
+
+.teacher__item {
+  display: flex;
+}
+
+.teacher__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.teacher__svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 18px;
+  fill: rgb(255, 107, 8);
+}
+
+.teacher__description {
+  width: 246px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(17, 21, 23);
+  display: inline-block;
+  margin: 0;
+
+}

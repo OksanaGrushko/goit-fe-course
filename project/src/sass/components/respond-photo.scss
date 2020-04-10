@@ -1,0 +1,16 @@
+.respond-photo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 55px;
+}
+
+.respond-photo--left,
+.respond-photo--right {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+.respond-photo--right {}

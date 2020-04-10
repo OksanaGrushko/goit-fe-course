@@ -1,0 +1,23 @@
+.numerator {
+  display: block;
+}
+
+.numerator__strap {
+  vertical-align: middle;
+  display: inline-block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: rgb(255, 107, 8);
+}
+
+.numerator__counter {
+  display: inline-block;
+  color: rgb(255, 107, 8);
+}
+
+.numerator__counter:before {
+  display: block;
+  counter-increment: section;
+  content: "0"counter(section) " ";
+}

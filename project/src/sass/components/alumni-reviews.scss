@@ -1,0 +1,58 @@
+.alumni-reviews {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.alumni-reviews__photo {
+  overflow: hidden;
+  // width: 80px;
+  height: 80px;
+  margin: 0 100px;
+  // border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.alumni-reviews__link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.alumni-reviews__svg {
+  display: block;
+  width: 20px;
+  height: 14px;
+}
+
+.alumni-reviews__name {
+  font-size: 13px;
+  font-weight: 800;
+  color: rgb(255, 107, 8);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.alumni-reviews__description {
+  font-size: 11px;
+  margin: 0;
+}
+
+.alumni-reviews__description:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.alumni-reviews__description--accent-gray {
+  color: rgb(133, 133, 133);
+}
+
+.alumni-reviews__description--accent-black {
+  color: rgb(24, 25, 29);
+}
+
+.alumni-reviews__description--accent {
+  color: rgb(255, 107, 8);
+}

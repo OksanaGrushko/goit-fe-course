@@ -1,0 +1,12 @@
+.sandwich-click {
+  display: inline-block;
+  position: relative;
+}
+
+.sandwich-click__link {
+  display: block;
+}
+
+.sandwich-click:hover .menu {
+  visibility: visible;
+}
