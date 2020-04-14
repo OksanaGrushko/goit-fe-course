@@ -1,11 +1,9 @@
 @import 'normalize';
 @import 'fonts';
-@import 'base';
-
 
 @import 'helpers/variables';
 @import 'helpers/mixins';
-
+@import 'body';
 
 @import 'components/link';
 @import 'components/list';
@@ -45,6 +43,7 @@
 @import 'components/form-input';
 @import 'components/networks';
 @import 'components/rights-reserved';
+@import 'components/consultation-button';
 
 
 @import 'components/media'

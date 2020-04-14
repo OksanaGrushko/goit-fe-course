@@ -1,23 +1,59 @@
 .numerator {
   display: block;
+
+  &__strap {
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $color-accent-orange;
+  }
+
+  &__counter {
+    display: inline-block;
+    color: $color-accent-orange;
+    font-size: 14px;
+    margin-left: 8px;
+
+    &:before {
+      display: block;
+      counter-increment: section;
+      content: "0"counter(section) " ";
+    }
+  }
 }
 
-.numerator__strap {
-  vertical-align: middle;
-  display: inline-block;
-  content: '';
-  width: 25px;
-  height: 2px;
-  background-color: rgb(255, 107, 8);
+@media screen and (min-width:768px) {
+  .numerator {
+    &__counter {
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+  }
 }
 
-.numerator__counter {
-  display: inline-block;
-  color: rgb(255, 107, 8);
+@media screen and (min-width:1280px) {
+  .numerator {
+    display: flex;
+    align-items: center;
+
+    &__counter {
+      font-size: $size-desktop;
+      margin-left: 4px;
+    }
+
+    &__strap {
+      margin-right: 10px;
+    }
+  }
 }
 
-.numerator__counter:before {
-  display: block;
-  counter-increment: section;
-  content: "0"counter(section) " ";
+@media screen and (min-width:1680px) {
+  .numerator {
+    &__counter {
+      font-size: $size-medium-desktop;
+    }
+  }
 }

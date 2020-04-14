@@ -1,0 +1,34 @@
+@media screen and (min-width:768px) {
+  .consultation-button {
+    border: 2px solid $color-accent-orange;
+    padding: 18px 20px;
+    cursor: pointer;
+    background-color: $background-color-button;
+    min-width: 250px;
+    min-height: 48px;
+
+    &__link {
+      text-transform: uppercase;
+      color: $color-accent-orange;
+      font-size: 11px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .consultation-button {
+    min-width: 300px;
+    min-height: 68px;
+  }
+}
+
+@media screen and (min-width:1680px) {
+  .consultation-button {
+    min-width: 350px;
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}

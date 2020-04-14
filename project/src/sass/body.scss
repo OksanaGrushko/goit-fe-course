@@ -17,7 +17,13 @@ img {
 body {
   font-size: 11px;
   line-height: 1.7;
-  font-family: "Montserrat", sans-serif;
+  font-family: $main-font;
   background-color: rgb(253, 254, 254);
-  color: rgb(24, 25, 29);
+  color: $color;
+}
+
+@media screen and (min-width: 1680px) {
+  body {
+    line-height: 1.4;
+  }
 }

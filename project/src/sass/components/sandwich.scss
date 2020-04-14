@@ -6,39 +6,39 @@
   justify-content: space-between;
   position: relative;
   z-index: 10;
-}
 
-.sandwich__line {
-  width: 24px;
-  height: 2px;
-  background-color: black;
-}
+  &__line {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
 
-.sandwich:hover .sandwich__line--top {
-  transform: rotate(40deg);
-  transform-origin: 0;
-  background-color: red;
-}
+  &:hover .sandwich__line--top {
+    transform: rotate(40deg);
+    transform-origin: 0;
+    background-color: red;
+  }
 
-.sandwich:hover .sandwich__line--center {
-  background-color: rgba(0, 0, 0, 0);
-}
+  &:hover .sandwich__line--center {
+    background-color: $background-color-button;
+  }
 
-.sandwich:hover .sandwich__line--bottom {
-  transform: rotate(-40deg);
-  transform-origin: 0;
-  background-color: red;
-}
+  &:hover .sandwich__line--bottom {
+    transform: rotate(-40deg);
+    transform-origin: 0;
+    background-color: red;
+  }
 
-.sandwich:hover .sandwich__line {
-  width: 20px;
-}
+  &:hover .sandwich__line {
+    width: 20px;
+  }
 
-.sandwich:hover .navigation {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  &:hover .navigation {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
-.sandwich:hover .menu-logotype {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
+  &:hover .menu-logotype {
+    color: $color-white;
+    font-size: 30px;
+  }
 }

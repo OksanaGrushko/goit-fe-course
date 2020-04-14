@@ -1,6 +1,32 @@
 .list-text {
   margin: 0;
   width: 130px;
-  font-size: 13px;
+  font-size: $size-mobile;
   font-weight: 700;
+}
+
+@media screen and (min-width:768px) {
+  .list-text {
+    width: 118px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .list-text {
+    width: 290px;
+    position: absolute;
+    left: 84px;
+    top: 18px;
+    z-index: 3;
+    font-size: $size-desktop;
+  }
+}
+
+@media screen and (min-width:1680px) {
+  .list-text {
+    font-size: $size-medium-desktop;
+    width: 348px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

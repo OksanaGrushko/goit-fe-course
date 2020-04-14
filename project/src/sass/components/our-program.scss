@@ -3,28 +3,116 @@
   background-repeat: repeat-x;
   background-position: top;
   text-align: center;
+
+  &__title {
+    font-size: $title-size-mobile;
+    font-weight: 800;
+    color: $color-white;
+    margin: 0;
+    padding-top: 44px;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    text-align: left;
+    margin-left: 62px;
+    // margin-bottom: 47px;
+    margin-bottom: 70px;
+  }
+
+  &__item {
+    padding-left: 30px;
+
+    &:not(:last-child) {
+      border-left: solid 2px rgb(84, 98, 100);
+      padding-bottom: 40px;
+    }
+  }
 }
 
-.our-program__title {
-  font-size: 20px;
-  font-weight: 800;
-  color: rgb(255, 255, 255);
-  margin: 0;
-  padding-top: 52px;
-  margin-bottom: 36px;
+@media screen and (min-width:768px) {
+  .our-program {
+    position: relative;
+    background-image: none;
+
+    &__title {
+      text-align: left;
+      font-size: $title-size-tablet;
+      padding-top: 52px;
+      margin-bottom: 46px;
+    }
+
+    &__list {
+      margin-left: 88px;
+      margin-bottom: 180px;
+    }
+
+    &__item {
+      padding-left: 55px;
+
+      &:not(:last-child) {
+        padding-bottom: 38px;
+      }
+    }
+  }
 }
 
-.our-program__list {
-  text-align: left;
-  margin-left: 62px;
-  margin-bottom: 47px;
+@media screen and (min-width:1280px) {
+  .our-program {
+    &__title {
+      font-size: $title-size-desktop;
+      padding-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      margin-left: 0;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      position: relative;
+      margin-bottom: 86px;
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 1410px;
+        background-color: rgb(84, 98, 100);
+        left: -100px;
+        top: 0;
+      }
+    }
+
+    &__item {
+      padding-left: 0;
+
+      &:not(:last-child) {
+        border-left: none;
+        padding-bottom: 0;
+      }
+    }
+  }
 }
 
-.our-program__item {
-  padding-left: 30px;
-}
+@media screen and (min-width:1680px) {
+  .our-program {
+    &__title {
+      padding-top: 114px;
+      margin-bottom: 82px;
+      font-size: $title-size-medium-desktops;
+    }
 
-.our-program__item:not(:last-child) {
-  border-left: solid 2px rgb(84, 98, 100);
-  padding-bottom: 32px;
+    &__list {
+      padding-top: 60px;
+
+      &::before {
+        width: 1700px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }

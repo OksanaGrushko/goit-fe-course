@@ -1,36 +1,120 @@
-.course-offer {}
+.course-offer {
+  &__text {
+    font-size: $title-size-mobile;
+    font-weight: 800;
+    color: $color;
+    line-height: 1.5;
+    margin: 44px 0 20px 0;
+  }
 
-.course-offer__text {
-  margin: 0;
-  margin-bottom: 28px;
-  font-size: 20px;
-  font-weight: 800;
-  color: rgb(24, 25, 29);
-  margin-top: 50px;
+  &__promise {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $color;
+
+    &--gray-accent {
+      color: $color-accent-gray;
+      display: block;
+    }
+
+    &--accent {
+      color: $color-accent-orange;
+    }
+
+    &--center {
+      display: block;
+    }
+  }
+
+  &__center {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  &__img {
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
 }
 
-.course-offer__promise {
-  font-size: 15px;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 12px;
-  color: rgb(24, 25, 29);
+@media screen and (min-width:768px) {
+  .course-offer {
+    display: flex;
+    margin-bottom: 94px;
+
+    &__text {
+      font-size: 28px;
+      line-height: 1.3;
+      margin-top: 16px;
+      margin-bottom: 10px;
+    }
+
+    &__center {
+      text-align: left;
+    }
+
+    &__img {
+      width: 370px;
+      margin-bottom: 0;
+    }
+  }
 }
 
-.course-offer__promise--gray-accent {
-  color: rgb(185, 185, 185)
+@media screen and (min-width:1280px) {
+  .course-offer {
+    margin-bottom: 128px;
+
+    &__text {
+      margin-top: 58px;
+      font-size: 48px;
+      line-height: 1.3;
+    }
+
+    &__img {
+      width: 714px;
+      height: 586px;
+    }
+
+    &__promise {
+      font-size: $size-desktop;
+      margin-bottom: 62px;
+
+      &--gray-accent {
+        display: block;
+      }
+
+      &--center {
+        display: inline-block;
+      }
+    }
+
+    &__center {
+      margin: 0;
+    }
+  }
 }
 
-.course-offer__promise--accent {
-  color: rgb(255, 107, 8);
-}
+@media screen and (min-width:1680px) {
+  .course-offer {
+    margin-bottom: 108px;
 
-.course-offer__center {
-  text-align: center;
-  margin-bottom: 36px;
-}
+    &__text {
+      font-size: 58px;
+      margin-top: 76px;
+      margin-bottom: 22px;
+    }
 
-.course-offer__img {
-  margin: 0 auto;
-  margin-bottom: 88px;
+    &__promise {
+      font-size: $size-medium-desktop;
+      margin-bottom: 54px;
+    }
+
+    &__img {
+      margin-right: -108px;
+      width: 840px;
+      height: 714px;
+    }
+  }
 }

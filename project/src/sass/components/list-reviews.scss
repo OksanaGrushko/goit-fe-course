@@ -2,20 +2,38 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 188px;
+
+  &__item {
+    display: inline-block;
+    overflow: hidden;
+    height: 58px;
+    width: 58px;
+    border: 2px solid $color-white;
+    border-radius: 50%;
+  }
 }
 
-.list-reviews__item {
-  display: inline-block;
-  overflow: hidden;
-  // width: 80px;
-  height: 54px;
-  width: 54px;
-  // border-style: solid;
-  border: 2px solid rgb(255, 255, 255);
-  // border-color: rgb(255, 255, 255);
-  border-radius: 50%;
+@media screen and (max-width:767px) {
+  .list-reviews {
+    &__item:not(:nth-child(-n+3)) {
+      display: none;
+    }
+  }
 }
 
-.list-reviews__item:not(:last-child) {
-  margin-right: 11px;
+@media screen and (min-width:768px) {
+  .list-reviews__item {
+
+    &:hover,
+    &:focus {
+      border-color: $color-accent-orange;
+    }
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .list-reviews__item:not(:last-child) {
+    margin-right: 36px;
+  }
 }

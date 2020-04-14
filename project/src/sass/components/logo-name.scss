@@ -1,30 +1,55 @@
-.logo-name__text {
-  display: flex;
-  font-size: 15px;
-  margin: 0;
+.logo-name {
+  &__text {
+    display: flex;
+    font-size: 15px;
+    margin: 0;
+
+    &--indentation {
+      margin: 7px;
+      position: relative;
+    }
+  }
+
+  &__text-lower {
+    font-size: 5px;
+    text-transform: uppercase;
+
+    &--accent {
+      color: $color-accent-orange;
+    }
+  }
+
+  &__svg {
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $color-accent-orange;
+  }
 }
 
-.logo-name__text--indentation {
-  margin: 7px;
-  position: relative;
-}
+@media screen and (min-width:768px) {
+  .logo-name {
+    &__text {
+      font-size: 25px;
+      font-weight: 800;
 
-.logo-name__text-lower {
-  font-size: 5px;
-  text-transform: uppercase;
-}
+      &--indentation {
+        margin: 10px;
+      }
+    }
 
-.logo-name__text-lower--accent {
-  color: rgb(255, 107, 8);
-}
+    &__text-lower {
+      font-size: 9px;
+      font-weight: 700;
+    }
 
-.logo-name__svg {
-  width: 15px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  height: 22px;
-  fill: rgb(255, 107, 8);
-  position: absolute;
+    &__svg {
+      width: 22px;
+      height: 30px;
+    }
+  }
 }

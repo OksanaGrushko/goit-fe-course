@@ -3,29 +3,83 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+
+  &__online {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 58px;
+    color: $color-white;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+
+    &--accent {
+      color: $color-accent-orange;
+    }
+  }
+
+  &__text {
+    // font-size: 11px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 28px;
+  }
 }
 
-.registration__online {
-  padding-top: 58px;
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  font-weight: 800;
-  text-align: center;
+@media screen and (min-width:768px) {
+  .registration {
+    background-image: url(../images/fon/fon-5.png);
+    background-size: cover;
+
+    &__item {
+      font-size: 22px;
+    }
+
+    &__text {
+      font-size: 15px;
+      margin-top: 14px;
+      margin-bottom: 36px;
+    }
+
+    &__online {
+      padding-top: 74px;
+      // padding-bottom: 70px;
+    }
+  }
 }
 
-.registration__item {
-  font-size: 14px;
-  font-weight: 800;
-  margin: 0;
+@media screen and (min-width:1280px) {
+  .registration {
+    &__item {
+      font-size: 36px;
+      margin: 0 140px;
+      margin-bottom: 36px;
+    }
+
+    &__text {
+      font-size: $size-desktop;
+      margin: 0 335px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
-.registration__item--accent {
-  color: rgb(255, 107, 8);
-}
+@media screen and (min-width:1680px) {
+  .registration {
+    &__item {
+      font-size: 38px;
+      margin: 0 190px;
+      margin-bottom: 62px;
+    }
 
-.registration__text {
-  font-size: 11px;
-  font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 28px;
+    &__text {
+      font-size: 25px;
+      margin: 0 277px;
+      margin-bottom: 48px;
+    }
+  }
 }

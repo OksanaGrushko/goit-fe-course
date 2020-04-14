@@ -1,14 +1,43 @@
 .form-register {
   padding-bottom: 58px;
+
+  &__name {
+    font-size: $size-mobile;
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+    margin-bottom: 55px;
+  }
 }
 
-.form-register__name {
-  font-size: 13px;
-  margin-bottom: 20px;
+@media screen and (min-width:768px) {
+  .form-register {
+    width: 404px;
+    margin: 0 auto;
+    // перенести паддінг
+    padding-bottom: 70px;
+
+    &__tel {
+      margin-bottom: 30px;
+    }
+  }
 }
 
-.form-register__tel {
-  margin-bottom: 55px;
-}
+@media screen and (min-width:1280px) {
+  .form-register {
+    width: 620px;
 
-.form-register__button {}
+    &__name {
+      font-size: $size-desktop;
+    }
+
+    &__tel {
+      margin-bottom: 56px;
+    }
+
+    &__name {
+      margin-bottom: 28px;
+    }
+  }
+}

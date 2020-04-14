@@ -2,5 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 28px;
+}
+
+@media screen and (min-width:768px) {
+  .navigation {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .navigation {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (min-width:1680px) {
+  .navigation {
+    margin-top: 28px;
+    margin-bottom: 52px;
+  }
 }

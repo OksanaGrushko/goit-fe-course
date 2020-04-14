@@ -1,58 +1,128 @@
 .alumni-reviews {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  background-color: $color-white;
+  box-shadow: $box-shadow;
   text-align: center;
   padding-bottom: 25px;
   padding-top: 20px;
+
+  &__photo {
+    overflow: hidden;
+    height: 80px;
+    margin: 0 100px;
+    border-color: $color-white;
+    border-radius: 50%;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__svg {
+    display: block;
+    width: 38px;
+    height: 22px;
+  }
+
+  &__name {
+    font-size: $size-mobile;
+    font-weight: 800;
+    color: $color-accent-orange;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  &__description {
+    font-size: 11px;
+    margin: 0 14px;
+  }
+
+  &__description:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__description--accent-gray {
+    color: rgb(133, 133, 133);
+  }
+
+  &__description--accent-black {
+    color: $color-accent-black;
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.9;
+  }
+
+  &__description--accent {
+    color: $color-accent-orange;
+  }
 }
 
-.alumni-reviews__photo {
-  overflow: hidden;
-  // width: 80px;
-  height: 80px;
-  margin: 0 100px;
-  // border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-radius: 50%;
+@media screen and (min-width:768px) {
+  .alumni-reviews {
+    display: flex;
+    padding-top: 46px;
+    padding-bottom: 50px;
+
+    &__photo {
+      margin: 0;
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__description {
+      font-size: $size-mobile;
+    }
+
+    &__svg {
+      width: 28px;
+      height: 16px;
+    }
+  }
 }
 
-.alumni-reviews__link {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 25px;
+@media screen and (min-width:1280px) {
+  .alumni-reviews {
+    width: 1065px;
+    margin: 0 auto;
+
+    &__photo {
+      height: 145px;
+    }
+
+    &__name {
+      font-size: 25px;
+    }
+
+    &__description {
+      font-size: $size-mobile;
+    }
+
+    &__description--accent-black {
+      font-size: 17px;
+    }
+
+    &__name {
+      margin-bottom: 12px;
+    }
+
+    &__description {
+      margin-bottom: 18px;
+    }
+
+
+  }
 }
 
-.alumni-reviews__svg {
-  display: block;
-  width: 20px;
-  height: 14px;
-}
+@media screen and (min-width:1680px) {
+  .alumni-reviews__description:last-child {
+    margin-bottom: 0;
+  }
 
-.alumni-reviews__name {
-  font-size: 13px;
-  font-weight: 800;
-  color: rgb(255, 107, 8);
-  margin: 0;
-  margin-bottom: 8px;
-}
-
-.alumni-reviews__description {
-  font-size: 11px;
-  margin: 0;
-}
-
-.alumni-reviews__description:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.alumni-reviews__description--accent-gray {
-  color: rgb(133, 133, 133);
-}
-
-.alumni-reviews__description--accent-black {
-  color: rgb(24, 25, 29);
-}
-
-.alumni-reviews__description--accent {
-  color: rgb(255, 107, 8);
+  .alumni-reviews {
+    padding-bottom: 45px;
+  }
 }

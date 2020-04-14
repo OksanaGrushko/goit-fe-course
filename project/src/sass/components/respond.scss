@@ -1,9 +1,33 @@
 .respond {
-  font-size: 20px;
+  font-size: $title-size-mobile;
   font-weight: 800;
   color: rgb(17, 21, 23);
   text-align: center;
   margin: 0;
   margin-top: 44px;
   margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+@media screen and (min-width:768px) {
+  .respond {
+    // убрати маргін топ
+    margin-bottom: 40px;
+    font-size: $title-size-tablet;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .respond {
+    margin-top: 94px;
+    font-size: $title-size-desktop;
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and (min-width:1680px) {
+  .respond {
+    margin-top: 0;
+    margin-bottom: 43px;
+  }
 }

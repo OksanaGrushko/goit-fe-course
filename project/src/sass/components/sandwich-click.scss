@@ -10,3 +10,9 @@
 .sandwich-click:hover .menu {
   visibility: visible;
 }
+
+@media screen and (min-width:1280px) {
+  .sandwich-click {
+    display: none;
+  }
+}

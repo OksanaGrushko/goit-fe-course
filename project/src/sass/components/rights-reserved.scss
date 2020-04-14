@@ -1,5 +1,5 @@
 .rights-reserved {
-  background-color: rgb(17, 21, 23);
+  background-color: $background-color;
   text-align: center;
 }
 
@@ -8,4 +8,16 @@
   margin: 0;
   padding-top: 30px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width:768px) {
+  .rights-reserved {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .rights-reserved__text {
+    font-size: 15px;
+  }
 }
