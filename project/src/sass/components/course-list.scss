@@ -41,7 +41,7 @@
 
     &__item {
       position: relative;
-      width: 316px;
+      width: 380px;
 
       &::before {
         left: 97px;
@@ -54,5 +54,10 @@
 @media screen and (min-width:1680px) {
   .course-list {
     margin-bottom: 127px;
+
+    &__item {
+      position: relative;
+      width: 440px;
+    }
   }
 }

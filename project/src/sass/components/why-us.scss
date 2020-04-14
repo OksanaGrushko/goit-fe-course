@@ -84,7 +84,7 @@
       background-image: url(../images/photos/pic2.png);
       width: 408px;
       height: 280px;
-      right: -30px;
+      right: -20px;
       top: -330px;
       background-position: center;
       background-size: cover;
@@ -128,8 +128,9 @@
     &__img {
       width: 546px;
       height: 395px;
-      left: -26px;
       top: -198px;
+      right: 0;
+      left: -20px;
       z-index: 0;
     }
   }
@@ -159,7 +160,7 @@
     &__img {
       width: 700px;
       height: 546px;
-      left: -1410px;
+   
     }
   }
 }
