@@ -1,13 +1,11 @@
 .form-register {
-  padding-bottom: 58px;
-
   &__name {
     font-size: $size-mobile;
     margin-bottom: 20px;
   }
 
   &__tel {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 }
 
@@ -15,11 +13,9 @@
   .form-register {
     width: 404px;
     margin: 0 auto;
-    // перенести паддінг
-    padding-bottom: 70px;
 
     &__tel {
-      margin-bottom: 30px;
+      margin-bottom: 36px;
     }
   }
 }
@@ -33,7 +29,7 @@
     }
 
     &__tel {
-      margin-bottom: 56px;
+      margin-bottom: 58px;
     }
 
     &__name {

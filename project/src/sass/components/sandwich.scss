@@ -10,7 +10,7 @@
   &__line {
     width: 24px;
     height: 2px;
-    background-color: black;
+    background-color: $color-black;
   }
 
   &:hover .sandwich__line--top {
@@ -40,5 +40,13 @@
   &:hover .menu-logotype {
     color: $color-white;
     font-size: 30px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .sandwich {
+    &:hover .menu__list {
+      display: inline-block;
+    }
   }
 }

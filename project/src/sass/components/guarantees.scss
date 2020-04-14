@@ -1,4 +1,12 @@
 .guarantees {
+  &__fon {
+    background-image: url(../images/fon/fon3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 0 -70px;
+    margin-bottom: 38px;
+  }
 
   &__list {
     position: relative;
@@ -6,7 +14,6 @@
     padding-bottom: 26px;
     padding-top: 22px;
     width: 280px;
-    // 246?
     left: 50%;
     transform: translateX(-50%);
   }
@@ -16,7 +23,7 @@
     padding-right: 24px;
 
     &:not(:last-child) {
-      border-left: dotted 1px rgb(196, 196, 196);
+      border-left: dotted 1px $border-color;
       padding-bottom: 16px;
     }
   }
@@ -31,7 +38,7 @@
 
   &__text {
     margin: 0;
-    color: rgb(24, 25, 29);
+    color: $color;
     line-height: 1.9;
 
     &--accent {
@@ -50,17 +57,17 @@
     font-weight: 800;
     margin: 0;
     margin-bottom: 18px;
-    // position: absolute;
-    // top: -58px;
-    // left: 50%;
-    // transform: translateX(-50%);
   }
 }
 
 
 @media screen and (min-width:768px) {
   .guarantees {
-    background-image: none;
+    &__fon {
+      background-repeat: repeat-x;
+      margin: 0;
+      margin-bottom: 52px;
+    }
 
     &__title {
       font-size: $title-size-tablet;
@@ -78,14 +85,12 @@
 
 @media screen and (min-width:1280px) {
   .guarantees {
+    &__fon {
+      margin-bottom: 70px;
+    }
+
     &__title {
       font-size: $title-size-desktop;
-      // просто забратипозітіон
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translateX(0);
-      margin-bottom: 24px;
     }
 
     &__list {
@@ -121,6 +126,10 @@
 
 @media screen and (min-width:1680px) {
   .guarantees {
+    &__fon {
+      margin-bottom: 116px;
+    }
+
     &__title {
       font-size: $title-size-medium-desktops;
       margin-bottom: 36px;

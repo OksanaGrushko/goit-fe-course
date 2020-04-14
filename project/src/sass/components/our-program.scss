@@ -1,8 +1,10 @@
 .our-program {
-  background-image: url(../images/fon/black-fon2.png);
-  background-repeat: repeat-x;
-  background-position: top;
-  text-align: center;
+  position: relative;
+
+  &__info {
+    position: relative;
+    z-index: 12;
+  }
 
   &__title {
     font-size: $title-size-mobile;
@@ -16,8 +18,7 @@
   &__list {
     text-align: left;
     margin-left: 62px;
-    // margin-bottom: 47px;
-    margin-bottom: 70px;
+    margin-bottom: 44px;
   }
 
   &__item {
@@ -28,12 +29,21 @@
       padding-bottom: 40px;
     }
   }
+
+  &__fon {
+    height: 1890px;
+  }
 }
 
 @media screen and (min-width:768px) {
   .our-program {
     position: relative;
     background-image: none;
+
+    &__info {
+      position: relative;
+      z-index: 3;
+    }
 
     &__title {
       text-align: left;
@@ -53,6 +63,10 @@
       &:not(:last-child) {
         padding-bottom: 38px;
       }
+    }
+
+    &__fon {
+      height: 1338px;
     }
   }
 }
@@ -78,9 +92,10 @@
         content: '';
         position: absolute;
         height: 2px;
-        width: 1410px;
+        width: 1260px;
         background-color: rgb(84, 98, 100);
-        left: -100px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 0;
       }
     }
@@ -92,6 +107,10 @@
         border-left: none;
         padding-bottom: 0;
       }
+    }
+
+    &__fon {
+      height: 1220px;
     }
   }
 }
@@ -109,9 +128,7 @@
 
       &::before {
         width: 1700px;
-        left: 50%;
         top: 0;
-        transform: translateX(-50%);
       }
     }
   }

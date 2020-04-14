@@ -1,6 +1,6 @@
 .course-list {
   margin-left: 49px;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
 
   &__item {
     display: flex;
@@ -8,18 +8,18 @@
     font-size: $size-mobile;
     margin-bottom: 18px;
     position: relative;
-  }
 
-  &__item::before {
-    display: block;
-    content: "";
-    width: 3px;
-    height: 36px;
-    background-color: $color-white;
-    position: absolute;
-    left: 55px;
-    top: 10px;
-    z-index: 1;
+    &::before {
+      display: block;
+      content: "";
+      width: 3px;
+      height: 36px;
+      background-color: $color-white;
+      position: absolute;
+      left: 55px;
+      top: 10px;
+      z-index: 1;
+    }
   }
 }
 

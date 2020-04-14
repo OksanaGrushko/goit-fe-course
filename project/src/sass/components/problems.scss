@@ -26,7 +26,6 @@
     font-size: $size-mobile;
     font-weight: 700;
     margin-top: 6px;
-    // line-height: 1.5;
     line-height: 1.4;
   }
 }
@@ -41,9 +40,7 @@
   .problems {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
-    padding-left: 108px;
-    padding-bottom: 44px;
+    padding: 30px 0 44px 108px;
 
     &__title {
       font-size: $title-size-tablet;
@@ -102,9 +99,7 @@
 
 @media screen and (min-width:1680px) {
   .problems {
-    padding-top: 62px;
-    padding-left: 100px;
-    padding-bottom: 75px;
+    padding: 62px 0 75px 100px;
 
     &__title {
       font-size: $title-size-medium-desktops;

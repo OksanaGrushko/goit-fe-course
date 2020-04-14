@@ -13,7 +13,7 @@
   <header>
     <div class="wrapper">
       <div class="navigation">
-        <div class="q">
+        <div class="navigation__header">
           <div class="logotype">
             <a class="logotype__link link" href="#">
               <div class="logo-name">
@@ -28,28 +28,28 @@
                 <span class="logo-name__text-lower--accent">Адский</span> английский</div>
             </a>
           </div>
-        
-    <div class="i">
-          <ul class="menu__list list">
-            <li class="menu__item">
-              <a class="menu__link link">Программа обучения</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link">О нас</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link">Варианты обучения</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link">Контакты</a>
-            </li>
-          </ul>
-          <div class="consultation">
-            <button class="consultation-button" type="button">
-              <a class="consultation-button__link link" href="tel:+38 (000) 000 00 00">Консультация по
-                телефону</a></button>
+
+          <div class="navigation__menu">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a class="menu__link link">Программа обучения</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link">Варианты обучения</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link">Контакты</a>
+              </li>
+            </ul>
+            <div class="consultation">
+              <button class="consultation-button" type="button">
+                <a class="consultation-button__link link" href="tel:+38 (000) 000 00 00">Консультация по
+                  телефону</a></button>
+            </div>
           </div>
-</div>
 
         </div>
         <div class="sandwich-click">
@@ -106,7 +106,7 @@
 
 
       <div class="course-offer">
-        <div class="p">
+        <div class="course-offer__info">
           <h2 class="course-offer__text">Комплексная подготовка к ВНО по английскому языку</h2>
           <p class="course-offer__promise">
             <span class="course-offer__promise--gray-accent">Просто не будет.
@@ -149,8 +149,8 @@
     </div>
   </header>
 
-  <section class="v">
-    <div class="decisions">
+  <section class="decisions">
+    <div class="decisions__item">
       <div class="wrapper">
         <h3 class="problems__title">Главные проблемы учеников
           на English ВНО, которые мы <span class="problems__title--accent">помогаем</span> решить</h3>
@@ -275,16 +275,16 @@
         </div>
       </div>
     </div>
-    <div class="c">
-      <div class="cc">
-        <div class="ccc"></div>
+    <div class="decisions__fon">
+      <div class="decisions__fon-positiot">
+        <div class="decisions__fon-img"></div>
       </div>
     </div>
   </section>
 
   <section class="our-program">
     <div class="wrapper">
-      <div class="r">
+      <div class="our-program__info">
         <h3 class="our-program__title">Наша программа</h3>
         <ul class="our-program__list list">
           <li class="our-program__item">
@@ -370,14 +370,14 @@
               <li class="our-semester__item">
                 <span class="our-semester__title"></span>
                 <p class="our-semester__text ">Revision <br> Tests</p>
-                <div class="our-semester__img"></div>
               </li>
             </ul>
           </li>
         </ul>
 
-        <div>
+        <div class="why-us__position">
           <h4 class="why-us">Почему нас выбирают</h4>
+          <div class="why-us__img"></div>
           <ul class="why-us__list list">
             <li class="why-us__item">
               <div class="numerator">
@@ -425,17 +425,16 @@
         </div>
       </div>
     </div>
-    <div class="a"></div>
+    <div class="decisions__fon our-program__fon"></div>
   </section>
 
   <section>
     <div class="wrapper">
       <h4 class="teacher">Преподаватель</h4>
-      <div class="t">
+      <div class="teacher__info">
         <div class="teacher__photo">
-          <!-- <img class="teacher__img" src="images/photos/teacher.png"> -->
         </div>
-        <div class="h">
+        <div class="teacher__resume">
           <p class="teacher__name">Елена Морева</p>
           <ul class="teacher__list list">
             <li class="teacher__item">
@@ -483,7 +482,7 @@
   <section class="guarantees">
     <div class="wrapper">
       <h5 class="guarantees__title">Мы гарантируем</h5>
-      <div class="m">
+      <div class="guarantees__fon">
         <ul class="guarantees__list list">
           <li class="guarantees__item">
             <svg class="guarantees__svg">
@@ -524,7 +523,7 @@
     <div class="wrapper">
       <h6 class="respond">Отзывы наших выпускников</h6>
       <div class="alumni-reviews">
-        <div class="z">
+        <div class="alumni-reviews__info-photo">
           <div class="alumni-reviews__photo">
             <img class="alumni-reviews__img" src="images/photos/pasted image 0.png">
           </div>
@@ -533,18 +532,20 @@
               <use href="images/svg/sprite.svg#vk"></use>
             </svg></a>
         </div>
-        <div class="x">
+        <div class="alumni-reviews__info">
           <p class="alumni-reviews__name">Тоня Кучеровская</p>
           <p class="alumni-reviews__description alumni-reviews__description--accent-gray">Выпуск 2015-го года,
             Національний університет біоресурсів і природокористування України</p>
-          <p class="alumni-reviews__description k">
+          <p class="alumni-reviews__description ">
             <span class="alumni-reviews__description--accent-black">За короткий час занять зОленою
-            я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З
-            першого ж заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її справді
-            хвилювала моя успішність. Вона стала для мене авторитетом, проте я не тремтіла на урках, маючи страх зробити
-            найменшу помилку. Зараз я можу похизуватись тим, що я студент ..</span>
+              я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З
+              першого ж заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її
+              справді
+              хвилювала моя успішність. Вона стала для мене авторитетом, проте я не тремтіла на урках, маючи страх
+              зробити
+              найменшу помилку. Зараз я можу похизуватись тим, що я студент ..</span>
             <a class="alumni-reviews__description--accent" href="#"> Читать дальше </a>
-            </p>
+          </p>
         </div>
       </div>
       <div>
@@ -591,8 +592,8 @@
           <input class="form-register__name form-input" type="text" placeholder="Имя*" name="user-name" required="">
           <input class="form-register__tel form-input" type="tel" placeholder="Телефон*" name="phone" required="">
           <div class="form-register__button">
-            <button class="course-button" type="button">
-              <a class="course-button__link link" href="#">хочу на бесплатное занятие</a></button>
+            <button class="course-button course-button--width" type="button">
+              <a class="course-button__link  link" href="#">хочу на бесплатное занятие</a></button>
           </div>
         </form>
       </div>
@@ -600,10 +601,9 @@
   </section>
   <footer>
     <div class="wrapper">
-      <div class="l">
+      <div class="networks">
         <div class="networks__center">
-          <div class="o"></div>
-          <div class="networks">
+          <div class="networks__tel">
             <svg class="networks__svg">
               <use href="images/svg/sprite.svg#call"></use>
             </svg>

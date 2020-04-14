@@ -1,6 +1,14 @@
 .networks {
-  margin-top: 36px;
-  margin-bottom: 22px;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 28px;
+
+  &__tel {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__center {
     text-align: center;
@@ -22,47 +30,68 @@
   &__inst {
     width: 38px;
     height: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width:768px) {
   .networks {
-    margin-right: 60px;
-    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
+
+    &__tel {
+      margin: 0;
+    }
 
     &__center {
       display: flex;
       align-items: center;
       margin: 0;
-      margin-left: 84px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__svg {
+      width: 28px;
+      height: 28px;
     }
 
     &__inst {
       margin: 0;
+      margin-left: 60px;
+      font-size: 20px;
     }
   }
 }
 
 @media screen and (min-width:1280px) {
   .networks {
+    margin-top: 42px;
+    margin-bottom: 38px;
+
     &__link {
       font-size: 27px;
     }
 
     &__svg {
-      width: 32px;
-      height: 32px;
-    }
-
-    &__center {
-      margin-left: 254px;
+      width: 42px;
+      height: 42px;
     }
   }
 }
 
 @media screen and (min-width:1680px) {
   .networks {
+    position: relative;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
     &__center {
       margin: 0;
       position: absolute;

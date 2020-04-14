@@ -2,7 +2,7 @@
   background-color: $color-white;
   box-shadow: $box-shadow;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   padding-top: 20px;
 
   &__photo {
@@ -36,50 +36,73 @@
   &__description {
     font-size: 11px;
     margin: 0 14px;
-  }
+    line-height: 1.5;
 
-  &__description:not(:last-child) {
-    margin-bottom: 12px;
-  }
+    &--accent-gray {
+      color: $color-accent-gray-too;
+      margin-bottom: 14px;
+    }
 
-  &__description--accent-gray {
-    color: rgb(133, 133, 133);
-  }
+    &--accent-black {
+      color: $color-accent-black;
+      height: 100px;
+      overflow: hidden;
+      display: inline-block;
+      line-height: 1.9;
+    }
 
-  &__description--accent-black {
-    color: $color-accent-black;
-    height: 100px;
-    overflow: hidden;
-    display: inline-block;
-    line-height: 1.9;
-  }
-
-  &__description--accent {
-    color: $color-accent-orange;
+    &--accent {
+      color: $color-accent-orange;
+    }
   }
 }
 
 @media screen and (min-width:768px) {
   .alumni-reviews {
     display: flex;
-    padding-top: 46px;
-    padding-bottom: 50px;
+    padding-top: 34px;
+    padding-bottom: 46px;
+
+    &__info-photo {
+      display: inline-block;
+      width: 158px;
+      padding: 0 36px;
+    }
+
+    &__info {
+      display: inline-block;
+      width: 472px;
+      text-align: left;
+    }
 
     &__photo {
       margin: 0;
+      margin-top: 26px;
+    }
+
+    &__link {
+      margin-top: 16px;
+      margin-bottom: 2px;
+    }
+
+    &__svg {
+      width: 32px;
+      height: 22px;
     }
 
     &__name {
-      font-size: 18px;
+      font-size: $size-desktop;
+      margin-bottom: 12px;
     }
 
     &__description {
       font-size: $size-mobile;
-    }
+      margin: 0 4px;
 
-    &__svg {
-      width: 28px;
-      height: 16px;
+      &--accent-black {
+        line-height: 1.6;
+        height: 96px;
+      }
     }
   }
 }
@@ -88,6 +111,20 @@
   .alumni-reviews {
     width: 1065px;
     margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 24px;
+
+    &__info-photo {
+      padding-left: 84px;
+      padding-right: 18px;
+      width: 248px;
+    }
+
+    &__info {
+      width: 724px;
+      margin-top: 12px;
+      margin-left: 24px;
+    }
 
     &__photo {
       height: 145px;
@@ -95,34 +132,51 @@
 
     &__name {
       font-size: 25px;
+      margin-bottom: 6px;
     }
 
     &__description {
       font-size: $size-mobile;
+      margin: 0;
+
+      &--accent-gray {
+        width: 500px;
+        margin-bottom: 12px;
+      }
+
+      &--accent-black {
+        font-size: 17px;
+        height: 160px;
+        line-height: 1.7;
+      }
+
+      &--accent {
+        font-size: 16px;
+      }
     }
 
-    &__description--accent-black {
-      font-size: 17px;
+    &__link {
+      margin-top: 20px;
     }
-
-    &__name {
-      margin-bottom: 12px;
-    }
-
-    &__description {
-      margin-bottom: 18px;
-    }
-
-
   }
 }
 
 @media screen and (min-width:1680px) {
-  .alumni-reviews__description:last-child {
-    margin-bottom: 0;
-  }
-
   .alumni-reviews {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
+
+    &__info-photo {
+      padding-left: 86px;
+      padding-right: 35px;
+      width: 266px;
+    }
+
+    &__info {
+      margin-left: 0;
+    }
+
+    &__description--accent-black {
+      height: 170px;
+    }
   }
 }

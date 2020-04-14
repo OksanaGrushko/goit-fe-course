@@ -18,19 +18,14 @@
 @media screen and (min-width:1280px) {
   .course-button {
     padding: 28px 20px;
-
-    &__link {
-      font-size: 12px;
-    }
-  }
-}
-
-@media screen and (min-width:1280px) {
-  .course-button {
     min-width: 300px;
 
     &__link {
       font-size: 14px;
+    }
+
+    &--width {
+      min-width: 350px;
     }
   }
 }

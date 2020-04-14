@@ -11,6 +11,12 @@
     width: 58px;
     border: 2px solid $color-white;
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      border-color: $color-accent-orange;
+      cursor: pointer;
+    }
   }
 }
 
@@ -23,17 +29,18 @@
 }
 
 @media screen and (min-width:768px) {
-  .list-reviews__item {
-
-    &:hover,
-    &:focus {
-      border-color: $color-accent-orange;
-    }
+  .list-reviews {
+    width: 510px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .list-reviews__item:not(:last-child) {
-    margin-right: 36px;
+  .list-reviews {
+    width: 600px;
+
+    &__item {
+      width: 60px;
+      height: 60px;
+    }
   }
 }

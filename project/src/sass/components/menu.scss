@@ -2,16 +2,13 @@
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: -40px;
-  left: -276px;
   width: 320px;
   visibility: hidden;
-  z-index: 1;
+  z-index: 3;
   min-height: 590px;
 
   &__list {
-    margin-left: 45px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 45px;
   }
 
   &__item {
@@ -39,9 +36,26 @@
   color: $color-white;
 }
 
+@media screen and (max-width:767px) {
+  .menu {
+    left: -276px;
+  }
+}
+
 @media screen and (min-width:768px) {
-  .menu__list {
-    display: none;
+  .menu {
+    width: 766px;
+    right: -30px;
+    top: -54px;
+
+    &__link {
+      font-size: 28px;
+    }
+
+    &__list {
+      margin: 50px 200px 0 200px;
+      line-height: 1.4;
+    }
   }
 }
 

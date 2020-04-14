@@ -16,12 +16,13 @@
 
 @media screen and (min-width:768px) {
   .respond-photo {
-    padding-bottom: 75px;
+    padding-bottom: 72px;
+    padding-top: 22px;
 
     &--left,
     &--right {
       position: relative;
-      top: -226px;
+      top: -182px;
     }
 
     &--left {
@@ -41,21 +42,39 @@
 @media screen and (min-width:1280px) {
   .respond-photo {
     padding-top: 34px;
-    padding-bottom: 100px;
+    padding-bottom: 96px;
 
     &--left {
-      left: 0px;
+      left: 16px;
     }
 
     &--right {
-      right: 0px;
+      right: 16px;
+    }
+
+    &--left,
+    &--right {
+      top: -234px;
     }
   }
 }
 
 @media screen and (min-width:1680px) {
   .respond-photo {
-    padding-top: 43px;
-    padding-bottom: 125px;
+    padding-top: 38px;
+    padding-bottom: 120px;
+
+    &--left,
+    &--right {
+      top: -238px;
+    }
+
+    &--left {
+      left: 78px;
+    }
+
+    &--right {
+      right: 78px;
+    }
   }
 }
