@@ -4,6 +4,11 @@
   align-items: center;
   margin-top: 28px;
 
+  @media screen and (min-width:768px) {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
+
   &__menu {
     display: none;
   }
@@ -47,6 +52,7 @@
     }
   }
 }
+
 
 @media screen and (min-width:1680px) {
   .navigation {
