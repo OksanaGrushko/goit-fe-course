@@ -5,9 +5,7 @@
 
   &__tel {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
   }
 
   &__center {
@@ -22,6 +20,9 @@
   }
 
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     font-weight: 600;
     color: rgb(17, 21, 23);
@@ -35,7 +36,7 @@
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .networks {
     display: flex;
     flex-direction: row-reverse;
@@ -47,6 +48,18 @@
 
     &__tel {
       margin: 0;
+
+      ::after {
+        display: block;
+        content: '';
+        width: 1px;
+        height: 29px;
+        background-color: rgb(224, 224, 224);
+        position: absolute;
+        right: -32px;
+        top: 0;
+        cursor: initial;
+      }
     }
 
     &__center {
@@ -71,13 +84,19 @@
   }
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
   .networks {
     margin-top: 42px;
     margin-bottom: 38px;
 
     &__link {
       font-size: 27px;
+    }
+
+    &__tel {
+      ::after {
+        top: 9px;
+      }
     }
 
     &__svg {
@@ -87,11 +106,17 @@
   }
 }
 
-@media screen and (min-width:1680px) {
+@media screen and (min-width: 1680px) {
   .networks {
     position: relative;
     margin-top: 48px;
     margin-bottom: 48px;
+
+    &__tel {
+      ::after {
+        top: 7px;
+      }
+    }
 
     &__center {
       margin: 0;
